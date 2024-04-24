@@ -12,3 +12,7 @@ Step #4
 Run command: docker-compose run bias-demo bash
 
 You will now be inside the bash shell with all dependencies and necessary files
+
+To run the python model: python demo.py
+
+Once the model has trained itself on the data, it will allow user input comments.
