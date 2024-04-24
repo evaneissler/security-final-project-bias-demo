@@ -1,9 +1,9 @@
 Step #1:
 Clone repository
-https://github.com/evaneissler/security-final-project-bias-demo.git
+git clone https://github.com/evaneissler/security-final-project-bias-demo.git
 
 Step #2:
-Go to folder
+Go to folder /security-final-project-bias-demo
 
 Step #3
 Run command: docker-compose build
