@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  # Bias in AI
+  bias-demo:
+    build: ./
+    container_name: bias
+    hostname: bias-demo
