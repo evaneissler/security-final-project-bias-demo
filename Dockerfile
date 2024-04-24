@@ -5,7 +5,7 @@ FROM python:3.8-slim
 WORKDIR /root
 
 # Copy the current directory contents into the container at /app
-COPY ./config /root
+COPY . /root
 
 # Install any needed packages specified in requirements.txt
 RUN apt-get update && apt-get install -y \
