@@ -1,5 +1,6 @@
 Step #1:
 Clone repository
+https://github.com/evaneissler/security-final-project-bias-demo.git
 
 Step #2:
 Go to folder
