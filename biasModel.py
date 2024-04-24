@@ -9,10 +9,19 @@ class BiasModel:
         # Get the same results each time
         np.random.seed(0)
 
-        # Load the training data
-        data = pd.read_csv("./data.csv")
-        comments = data["comment_text"]
-        target = (data["target"]>0.7).astype(int)
+        # Load the first dataset
+        data1 = pd.read_csv("./data.csv")
+        comments1 = data1["comment_text"]
+        target1 = (data1["target"] > 0.7).astype(int)
+        
+        # Load the second dataset
+        data2 = pd.read_csv("./data2.csv")
+        comments2 = data2["comment_text"]
+        target2 = (data2["target"] > 0.7).astype(int)
+        
+        # Combine the data
+        comments = pd.concat([comments1, comments2], ignore_index=True)
+        target = pd.concat([target1, target2], ignore_index=True)
 
         # Break into training and test sets
         comments_train, comments_test, y_train, y_test = train_test_split(comments, target, test_size=0.30, stratify=target)
