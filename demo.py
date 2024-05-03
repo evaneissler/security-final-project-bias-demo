@@ -7,9 +7,9 @@ model = BiasModel()
 model.classify_string("This is a test comment.")
 
 # Accept new input
-while True:
-    user_input = input("Enter comment to test its toxicity (or 'quit' to exit): ")
-    if user_input.lower() == 'quit':
-        break
-    else:
-        model.classify_string(user_input)
+# while True:
+#     user_input = input("Enter comment to test its toxicity (or 'quit' to exit): ")
+#     if user_input.lower() == 'quit':
+#         break
+#     else:
+#         model.classify_string(user_input)
